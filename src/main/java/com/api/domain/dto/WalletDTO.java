@@ -1,5 +1,6 @@
 package com.api.domain.dto;
 
+import com.api.domain.Operation;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,5 +14,8 @@ public class WalletDTO {
     private String name;
     private String currency;
     private Integer amount;
-    List<WalletNoticeDTO> noticeList = new ArrayList<>();
+    private String owner;//login to user
+    private String description;
+    private String creationDate;
+    List<Operation> operations = new ArrayList<>();
 }
